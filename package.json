@@ -5,9 +5,11 @@
   "description": "Nathans UX and Frontend Development portfolio site, built in React",
   "main": "index.js",
   "scripts": {
-    "build": "gatsby build",
+    "start": "npm run dev",
     "dev": "gatsby develop",
-    "start": "npm run dev"
+    "build": "yarn build:gatsby",
+    "build:gatsby": "gatsby build",
+    "build:sw": "node src/helpers/sw.js --disabled-for-now"
   },
   "author": "Nathan Simpson",
   "license": "ISC",
@@ -19,6 +21,7 @@
     "@fortawesome/fontawesome-free-regular": "^5.0.13",
     "@fortawesome/fontawesome-svg-core": "^1.2.5",
     "@fortawesome/react-fontawesome": "^0.1.3",
+    "babel-minify": "^0.5.0",
     "babel-plugin-emotion": "^10.0.6",
     "babel-preset-es2015": "^6.24.1",
     "express": "^4.16.3",

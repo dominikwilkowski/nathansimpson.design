@@ -42,6 +42,7 @@ module.exports = {
         start_url: `/`,
         background_color: "#13171a",
         theme_color: `#000000`,
+        display: "standalone",
         display: `minimal-ui`,
         icons: [
           {

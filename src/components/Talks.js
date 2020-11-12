@@ -27,15 +27,15 @@ export const Talks = ({ data }) => (
 );
 
 const Talk = ({ node }) => {
-  const defaultBorder = `1px solid ${colors.slate['50']}`;
+  const defaultBorder = `1px solid ${colors.border}`;
 
   return (
     <div
       css={mq({
-        backgroundColor: colors.slate['30'],
+        backgroundColor: colors.backgroundEmphasis,
         border: defaultBorder,
-        borderLeft: [defaultBorder, `2px solid ${colors.orange}`],
-        borderTop: [`2px solid ${colors.orange}`, defaultBorder],
+        borderLeft: [defaultBorder, `2px solid ${colors.brand}`],
+        borderTop: [`2px solid ${colors.brand}`, defaultBorder],
         borderBottomRightRadius: borderRadius.lg,
         borderTopRightRadius: [0, borderRadius.lg],
         borderBottomLeftRadius: [borderRadius.lg, 0],
@@ -50,7 +50,7 @@ const Talk = ({ node }) => {
         css={mq({
           width: ['auto', 220],
           height: [160, 'auto'],
-          backgroundColor: colors.slate['40'],
+          backgroundColor: colors.backgroundEmphasis,
           backgroundImage: `url(https://i.ytimg.com/vi/${node.frontmatter.youtubeid}/hqdefault.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
